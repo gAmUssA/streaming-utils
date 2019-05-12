@@ -18,13 +18,14 @@ public class ConfigLoader {
       System.getProperty("user.home") + File.separator + ".ccloud" + File.separator + "config";
 
   static Properties loadConfig() {
+    log.info("Path isn't specified. Using Confluent Cloud ☁ config from default location");
     return loadConfig(DEFAULT_CONFIG_FILE);
   }
 
   public static Properties loadConfig(final String configFile) {
     if (!Files.exists(Paths.get(configFile))) {
       throw new RuntimeException(configFile
-                                 + " does not exist.\nYou need a file with client configuration, either create one or run `ccloud init` if you are a Confluent Cloud user");
+                                 + " does not exist.\nYou need a file with client configuration, either create one or run `ccloud init` if you are a Confluent Cloud ☁ user");
 
     }
     log.info("Loading configs from: {}", configFile);
@@ -36,6 +37,4 @@ public class ConfigLoader {
     }
     return cfg;
   }
-
-
 }

@@ -16,6 +16,6 @@ class ConfigLoaderTest extends Specification {
     where:
     fileName | expectedException | expectedMessage
     'blah'   | RuntimeException  | """${fileName} does not exist.
-You need a file with client configuration, either create one or run `ccloud init` if you are a Confluent Cloud user"""
+You need a file with client configuration, either create one or run `ccloud init` if you are a Confluent Cloud ☁ user"""
   }
 }
