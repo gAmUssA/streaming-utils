@@ -1,0 +1,33 @@
+= Streaming Utils
+Viktor Gamov <viktor@confluent.io>, © 2019 Confluent, Inc.
+2019-05-12
+:revdate: 2019-05-12 17:15:44 -0600
+:linkattrs:
+:ast: &ast;
+:y: &#10003;
+:n: &#10008;
+:y: icon:check-sign[role="green"]
+:n: icon:check-minus[role="red"]
+:c: icon:file-text-alt[role="blue"]
+:toc: auto
+:toc-placement: auto
+:toc-position: auto
+:toc-title: Table of content
+:toclevels: 3
+:idprefix:
+:idseparator: -
+:sectanchors:
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-theme: idea
+:experimental:
+
+The bits of reusable code that I found copy-pasting from one project to another.
+Thus, the separate project. 
+
+toc::[]
+
+== `ConfigLoader`
+
+Loads config file provided file path. 
+
